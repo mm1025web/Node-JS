@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+    />
+    <title>Home </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body id="home">
+    <!-- <a href="/view">View all users</a>
+    <hr>
+    <h3>Add a new user</h3>
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="number" name="rno" placeholder="Roll No.">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h3>Update a user's email</h3>
+    <form action="/update" method="POST">
+        <input type="number" name="rno" placeholder="Enter roll number">
+        <input type="email" name="email" placeholder="Enter new email">
+        <input type="submit" value="Update">
+    </form>
+    <hr>
+    <h3>Delete a user</h3>
+    <form action="/delete" method="POST">
+        <input type="number" name="rno" placeholder="Enter rno">
+        <input type="submit" value="Delete">
+    </form>
+    <hr>
+     <table><tr><th>Name</th><th>Email</th><th>Roll no.</th></tr>
+        <tr><td>${user.name}</td><td>${user.email}</td><td>${user.rno}</td></tr>
+    </table>  -->
+    <div class="container1">
+        <input type="checkbox" class="switchBtn">
+      </div>
+    <h1 class="welcome text-center" >
+        Hello there!!
+    </h1>
+    <!-- <div class="container">
+        <div class="avatar-upload">
+            <div class="avatar-edit">
+                <form action="/setdp" method="POST">
+                    <input type='file' id="imageUpload" name="image" accept=".png, .jpg, .jpeg" />
+                    <label for="imageUpload"></label>
+                    
+                    <input type="email" placeholder="Email" class="setemail" id="email" name="email" required>
+                    <input type="submit" class="action set" value="Upload">
+                </form>
+            </div>
+            <div class="avatar-preview">
+                <div id="imagePreview" style="background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png);">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="forgot box" style="margin-top: 0!important;">
+        <div class="text">Update Email</div>
+        <form action="/update" method="POST">
+            
+            <div class="field mb-2">
+              <span class="fas fa-id-card"></span>
+              <input type="text" placeholder="Regst. No." class="required" id="rno" name="rno" required>
+            </div>
+            
+            <div class="field mb-2">
+                <span class="fas fa-user"></span>
+                <input type="email" placeholder="New email" id="email" name="email" required>
+            </div>
+             <!-- <small class="valid">Enter a valid email address</small> -->
+
+            <div class="field">
+                <span class="fas fa-lock"></span>
+                <input type="password" class="pwd" id="pass" name="password" placeholder="Password" required>
+                <i class="fa fa-fw fa-eye field-icon "></i>
+            </div>
+            <input type="submit" class="action" value="Update" id="submitBtn" class="mt-4">
+
+        </form>
+      </div>
+      
+    <a href="/view">View all users</a><br>
+    <a href="/logout" class="logout">Logout</a>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>      
+    <script src="./js/script.js"></script> 
+    
+</body>
+</html>

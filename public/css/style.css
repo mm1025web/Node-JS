@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #d0d4da;
+  transition: ease-in-out 0.75s;
+
+}
+.welcome{
+  color: #000;
+}
+.switchBtn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 60px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: inset 2px 2px 5px #00000073,
+              inset -2px -2px 5px rgba(25, 28, 32, 0.288);
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.7);
+
+}
+.switchBtn:checked{
+  background-color: #555;
+}
+.switchBtn::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f185";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* content: ''; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  border-color: #fff;
+  transform: scale(0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  
+  transition: ease-in-out 0.65s;
+}
+.switchBtn2::before{
+  transition: ease-in-out 0.65s;
+  content: "\f186";
+}
+.switchBtn:checked::before{
+  left: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  
+}
+
+/* .container1 .mouth{
+  width: 15px;
+  height: 10px;
+  border-radius: 10px 10px 0 0;
+  border-color: #000;
+  position: absolute;
+  top: 55px;
+  left: 41px;
+  transition: all 0.5s ease;
+}
+.container1 .mouth .happy{
+  left: 143px;
+  border-radius: 0 0 10px 10px;
+}
+.container1 .eye1,.container1 .eye2 {
+  width: 8px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  transform: rotate(20deg);
+  }
+.container1 .eye1::after,.container1 .eye2::after {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  transform: rotate(-40deg);
+}
+.container1 .eye2 {
+  left: 66px;
+  transform: rotate(-20deg);
+}
+.container1 .eye2::after {
+  transform: rotate(40deg);
+  left: -1px;
+}
+.container1 .eye1 .happy,.container1 .eye2 .happy {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: 125px;
+}
+.container1 .eye2 .happy {
+  left: 170px;
+}
+.container1 .eye1 .happy::after,.container1 .eye2 .happy::after {
+  opacity: 0;
+}
+.container1 .tongue {
+  height: 4px;
+  width: 9px;
+  border-radius: 100%;
+  background-color: #ffacb7;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.container1 .tongue .happy {
+  opacity: 1;
+} */
+
+.box{
+  margin-top: -200px!important;
+  width: 330px;
+  background: #d0d4da;
+  border-radius: 10px;
+  padding: 40px 30px;
+  transition: ease-in-out 0.75s;
+  box-shadow: -3px -3px 7px #c5c5c573,
+              3px 3px 8px rgba(94, 104, 121, 0.288);
+}
+
+.signin .text,.signup .text{
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #000;
+}
+.forgot .text,.delete .text{
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #000;
+}
+
+.signin .field,.signup .field,.forgot .field, .delete .field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #dde1e7;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+  transition: ease-in-out 0.75s;
+
+}
+
+
+.signin .field:nth-child(2){
+  margin-top: 20px;
+}
+.signup .field{
+   margin: 15px 0 0 0;
+}
+.field span{
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #595959;
+}
+.field-icon {
+  position: absolute;
+  color: #666666;
+  top: 35%;
+  right: 10px;
+  cursor: pointer;
+ }
+
+.val-pass{
+  font-size:10px;
+  text-align: left;
+  margin: 5px 0 -10px 20%;
+}
+.complete {
+  color: #5DB406;
+}
+
+.forgot-pass{
+  text-align: right;
+  margin: 10px 0 0px 5px;
+}
+
+.forgot-pass a{
+  font-size: 14px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.forgot-pass:hover a{
+  text-decoration: underline;
+}
+
+.action{
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background: #d0d4da;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #5a5c66;
+  transition: ease-in-out 0.75s;
+
+}
+
+.action:focus{
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #a9acb4,
+              inset -5px -5px 10px #ffffff73;
+}
+
+
+.field #email:focus{
+  border:2px solid red;
+}
+
+.goback a{
+   font-size: 14px;
+  color: #3498db;
+   text-decoration: none;
+}
+.goback a:hover{
+  text-decoration: underline;
+}
+.sign{
+  font-size: 16px;
+  color: #595959;
+  margin: 10px 0;
+}
+
+.sign a{
+  color: #000;
+  text-decoration: none;
+}
+
+.sign a:hover{
+  text-decoration: underline;
+}
+.valid,.validrno{
+  color: red;
+  
+}
+
+.deleteAcc{
+   font-size: 14px;
+   color: #595959;
+   opacity: 0.8;
+   margin: 10px 0 0;
+ }
+ 
+ .deleteAcc a{
+   color: rgb(129, 129, 129);
+   text-decoration: none;
+ }
+ 
+ .deleteAcc a:hover{
+   text-decoration: underline;
+ }
+.logout{
+  position: absolute;
+  margin-top:10px;
+  bottom: 20px;
+  left: 48.2%;
+  display: flex;
+  justify-content: center;
+}
+
+.dark-mode{
+  background: #333!important;
+  transition: ease-in-out 0.75s;
+  box-shadow: -3px -3px 7px #00000073,
+              3px 3px 8px rgba(25, 28, 32, 0.288);
+}
+.dark-mode-input{
+  background: #333!important;
+  transition: ease-in-out 0.75s;
+  box-shadow: inset 2px 2px 5px #00000073,
+              inset -5px -5px 10px rgba(25, 28, 32, 0.288)!important;
+}
+.dark-mode-button{
+  background: #333!important;
+  transition: ease-in-out 0.75s;
+  box-shadow: inset 2px 2px 5px #00000073,
+              inset -5px -5px 10px rgba(25, 28, 32, 0.288);
+  box-shadow: 2px 2px 5px #17171a;
+
+}
+.dark-mode-button:focus{
+  color: #3498db ;
+  background: #5DB406;
+  box-shadow: inset 2px 2px 5px #00000073,
+              inset -5px -5px 10px rgba(25, 28, 32, 0.288);             
+}
+
+
+.avatar-upload {
+  position: absolute;
+  max-width: 205px;
+  margin: 50px auto;
+  
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  top: -10px;
+}
+.avatar-upload .avatar-edit input[type="email"] {
+  margin: 180px 0 0 0;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background: #dde1e7;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #5a5c66;
+  transition: ease-in-out 0.75s;
+}
+.avatar-upload .avatar-edit input[type="file"] {
+  display: none;
+}
+.avatar-upload .avatar-edit input[type="file"] + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #e4e6e7;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input[type="file"] + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input[type="file"] + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f304";
+  color: #757575;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0px;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #e4e6e7;
+  background: #e4e6e7;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.avatar-edit .set{
+  width: 60%;
+  transform: scale(0.8);
+}
+.avatar-edit .setemail{
+  font-size: 14px!important;
+  font-weight: 500!important;
+}
