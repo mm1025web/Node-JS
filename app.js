@@ -22,6 +22,7 @@ app.post('/add',(req,res)=>{
     // res.send('This is POST request')
     let user = req.body
     let data = fs.readFileSync(filename)
+    // data = data.trim(); 
     let db = JSON.parse(data)
     let email = req.body.email
     let rno = req.body.rno
