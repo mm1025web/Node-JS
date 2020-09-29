@@ -306,10 +306,10 @@ body{
    text-decoration: underline;
  }
 .logout{
-  position: absolute;
+  /* position: absolute; */
   margin-top:10px;
   bottom: 20px;
-  left: 48.2%;
+  /* left: 50%; */
   display: flex;
   justify-content: center;
 }
@@ -340,7 +340,6 @@ body{
   box-shadow: inset 2px 2px 5px #00000073,
               inset -5px -5px 10px rgba(25, 28, 32, 0.288);             
 }
-
 
 .avatar-upload {
   position: absolute;
