@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-  margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-html,body{
+html,
+body {
   height: 100%;
 }
 
-body{
+body {
   display: grid;
   place-items: center;
   text-align: center;
   background: #d0d4da;
   transition: ease-in-out 0.75s;
-
 }
-.welcome{
+.welcome {
   color: #000;
 }
-.switchBtn{
+.switchBtn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -29,19 +29,18 @@ body{
   height: 50px;
   background-color: #ddd;
   border-radius: 60px;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: inset 2px 2px 5px #00000073,
-              inset -2px -2px 5px rgba(25, 28, 32, 0.288);
+    inset -2px -2px 5px rgba(25, 28, 32, 0.288);
   -webkit-appearance: none;
   outline: none;
   transition: all 0.5s ease-in-out;
   transform: scale(0.7);
-
 }
-.switchBtn:checked{
+.switchBtn:checked {
   background-color: #555;
 }
-.switchBtn::before{
+.switchBtn::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f185";
@@ -57,18 +56,17 @@ body{
   left: 0;
   border-color: #fff;
   transform: scale(0.9);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
   transition: ease-in-out 0.65s;
 }
-.switchBtn2::before{
+.switchBtn2::before {
   transition: ease-in-out 0.65s;
   content: "\f186";
 }
-.switchBtn:checked::before{
+.switchBtn:checked::before {
   left: 50px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
-  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* .container1 .mouth{
@@ -143,38 +141,42 @@ body{
   opacity: 1;
 } */
 
-.box{
-  margin-top: -200px!important;
+.box {
+  margin-top: -200px !important;
   width: 330px;
   background: #d0d4da;
   border-radius: 10px;
   padding: 40px 30px;
   transition: ease-in-out 0.75s;
-  box-shadow: -3px -3px 7px #c5c5c573,
-              3px 3px 8px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 7px #c5c5c573, 3px 3px 8px rgba(94, 104, 121, 0.288);
 }
 
-.signin .text,.signup .text{
+.signin .text,
+.signup .text {
   font-size: 33px;
   font-weight: 600;
   margin-bottom: 35px;
   color: #000;
 }
-.forgot .text,.delete .text{
+.forgot .text,
+.delete .text {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 35px;
   color: #000;
 }
 
-.signin .field,.signup .field,.forgot .field, .delete .field{
+.signin .field,
+.signup .field,
+.forgot .field,
+.delete .field {
   height: 50px;
   width: 100%;
   display: flex;
   position: relative;
 }
 
-.field input{
+.field input {
   height: 100%;
   width: 100%;
   padding-left: 45px;
@@ -184,20 +186,17 @@ body{
   color: #595959;
   background: #dde1e7;
   border-radius: 25px;
-  box-shadow: inset 2px 2px 5px #babecc,
-              inset -5px -5px 10px #ffffff73;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
   transition: ease-in-out 0.75s;
-
 }
 
-
-.signin .field:nth-child(2){
+.signin .field:nth-child(2) {
   margin-top: 20px;
 }
-.signup .field{
-   margin: 15px 0 0 0;
+.signup .field {
+  margin: 15px 0 0 0;
 }
-.field span{
+.field span {
   position: absolute;
   width: 50px;
   line-height: 50px;
@@ -209,33 +208,33 @@ body{
   top: 35%;
   right: 10px;
   cursor: pointer;
- }
+}
 
-.val-pass{
-  font-size:10px;
+.val-pass {
+  font-size: 10px;
   text-align: left;
   margin: 5px 0 -10px 20%;
 }
 .complete {
-  color: #5DB406;
+  color: #5db406;
 }
 
-.forgot-pass{
+.forgot-pass {
   text-align: right;
   margin: 10px 0 0px 5px;
 }
 
-.forgot-pass a{
+.forgot-pass a {
   font-size: 14px;
   color: #3498db;
   text-decoration: none;
 }
 
-.forgot-pass:hover a{
+.forgot-pass:hover a {
   text-decoration: underline;
 }
 
-.action{
+.action {
   margin: 15px 0;
   width: 100%;
   height: 50px;
@@ -249,103 +248,97 @@ body{
   border-radius: 25px;
   box-shadow: 2px 2px 5px #5a5c66;
   transition: ease-in-out 0.75s;
-
 }
 
-.action:focus{
+.action:focus {
   color: #3498db;
-  box-shadow: inset 2px 2px 5px #a9acb4,
-              inset -5px -5px 10px #ffffff73;
+  box-shadow: inset 2px 2px 5px #a9acb4, inset -5px -5px 10px #ffffff73;
 }
 
-
-.field #email:focus{
-  border:2px solid red;
+.field #email:focus {
+  border: 2px solid red;
 }
 
-.goback a{
-   font-size: 14px;
+.goback a {
+  font-size: 14px;
   color: #3498db;
-   text-decoration: none;
+  text-decoration: none;
 }
-.goback a:hover{
+.goback a:hover {
   text-decoration: underline;
 }
-.sign{
+.sign {
   font-size: 16px;
   color: #595959;
   margin: 10px 0;
 }
 
-.sign a{
+.sign a {
   color: #000;
   text-decoration: none;
 }
 
-.sign a:hover{
+.sign a:hover {
   text-decoration: underline;
 }
-.valid,.validrno{
+.valid,
+.validrno {
   color: red;
-  
 }
 
-.deleteAcc{
-   font-size: 14px;
-   color: #595959;
-   opacity: 0.8;
-   margin: 10px 0 0;
- }
- 
- .deleteAcc a{
-   color: rgb(129, 129, 129);
-   text-decoration: none;
- }
- 
- .deleteAcc a:hover{
-   text-decoration: underline;
- }
-.logout{
+.deleteAcc {
+  font-size: 14px;
+  color: #595959;
+  opacity: 0.8;
+  margin: 10px 0 0;
+}
+
+.deleteAcc a {
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+}
+
+.deleteAcc a:hover {
+  text-decoration: underline;
+}
+.logout {
   /* position: absolute; */
-  margin-top:10px;
+  margin-top: 10px;
   bottom: 20px;
   /* left: 50%; */
   display: flex;
   justify-content: center;
 }
 
-.dark-mode{
-  background: #333!important;
+.dark-mode {
+  background: #333 !important;
   transition: ease-in-out 0.75s;
-  box-shadow: -3px -3px 7px #00000073,
-              3px 3px 8px rgba(25, 28, 32, 0.288);
+  box-shadow: -3px -3px 7px #00000073, 3px 3px 8px rgba(25, 28, 32, 0.288);
 }
-.dark-mode-input{
-  background: #333!important;
+.dark-mode-input {
+  background: #333 !important;
   transition: ease-in-out 0.75s;
   box-shadow: inset 2px 2px 5px #00000073,
-              inset -5px -5px 10px rgba(25, 28, 32, 0.288)!important;
+    inset -5px -5px 10px rgba(25, 28, 32, 0.288) !important;
 }
-.dark-mode-button{
-  background: #333!important;
+.dark-mode-button {
+  background: #333 !important;
   transition: ease-in-out 0.75s;
   box-shadow: inset 2px 2px 5px #00000073,
-              inset -5px -5px 10px rgba(25, 28, 32, 0.288);
+    inset -5px -5px 10px rgba(25, 28, 32, 0.288);
   box-shadow: 2px 2px 5px #17171a;
-
 }
-.dark-mode-button:focus{
-  color: #3498db ;
-  background: #5DB406;
+.dark-mode-button:focus {
+  color: #3498db;
+  background: #5db406;
   box-shadow: inset 2px 2px 5px #00000073,
-              inset -5px -5px 10px rgba(25, 28, 32, 0.288);             
+    inset -5px -5px 10px rgba(25, 28, 32, 0.288);
 }
 
 .avatar-upload {
   position: absolute;
   max-width: 205px;
   margin: 50px auto;
-  
 }
 .avatar-upload .avatar-edit {
   position: absolute;
@@ -417,11 +410,11 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
-.avatar-edit .set{
+.avatar-edit .set {
   width: 60%;
   transform: scale(0.8);
 }
-.avatar-edit .setemail{
-  font-size: 14px!important;
-  font-weight: 500!important;
+.avatar-edit .setemail {
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }

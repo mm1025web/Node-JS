@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous"
-/>
-  <title>Login Form </title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script>
-    
-  </script>
-</head>
-<body id="main">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script></script>
+  </head>
+  <body id="main">
     <div class="container1">
-      <!-- <input type="checkbox" class="switchBtn"> -->
+      <input type="checkbox" class="switchBtn" />
     </div>
 
     <!-- sign in form  -->
@@ -28,126 +25,204 @@
       <form action="/login" method="POST">
         <div class="field">
           <span class="fas fa-user"></span>
-          <input type="email" placeholder="Email" name="email" required>
+          <input type="email" placeholder="Email" name="email" required />
         </div>
         <div class="field">
           <span class="fas fa-lock"></span>
-          <input type="password" class="pwd" id="pass" name="password" placeholder="Password" required>
-          <i class="fa fa-fw fa-eye field-icon "></i>
+          <input
+            type="password"
+            class="pwd"
+            id="pass"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <i class="fa fa-fw fa-eye field-icon"></i>
         </div>
         <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
-        <input type="submit" class="action" value="Login">
-        <div class="sign">Not a member?
+        <input type="submit" class="action" value="Login" />
+        <div class="sign">
+          Not a member?
           <a href="#" id="sign">Signup now</a>
         </div>
-        <div class="deleteAcc">Fed up?
-            <a href="#" id="delete">Delete account</a>
+        <div class="deleteAcc">
+          Fed up?
+          <a href="#" id="delete">Delete account</a>
         </div>
       </form>
-   </div> 
+    </div>
 
-   <!-- sign up form -->
-  <div class="signup box">
-   <div class="text">Sign up Form</div>
-         <form action="/add" method="POST" id="form1">
-         <div class="field">
-            <span class="fas fa-user"></span>
-            <input type="text" placeholder="Name" name="name"  required>
-         </div>
-         <div class="field">
-            <span class="fas fa-envelope"></span>
-            <input type="email" placeholder="Email" name="email" id="email" required>
-         </div>
-         <small class="valid">Enter a valid email address</small>
+    <!-- sign up form -->
+    <div class="signup box">
+      <div class="text">Sign up Form</div>
+      <form action="/add" method="POST" id="form1">
+        <div class="field">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Name" name="name" required />
+        </div>
+        <div class="field">
+          <span class="fas fa-envelope"></span>
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <small class="valid">Enter a valid email address</small>
 
-         <div class="field" title="Enter a password longer than 8 characters">
+        <div class="field" title="Enter a password longer than 8 characters">
           <span class="fas fa-lock"></span>
-          <input type="password" class="pwd required" id="pass" name="password" placeholder="Password" minlength="8" required>
-          <i class="fa fa-fw fa-eye field-icon "></i>
-        </div> 
+          <input
+            type="password"
+            class="pwd required"
+            id="pass"
+            name="password"
+            placeholder="Password"
+            minlength="8"
+            required
+          />
+          <i class="fa fa-fw fa-eye field-icon"></i>
+        </div>
         <ul class="val-pass">
           <li class="password_length">At least 8 characters</li>
-          <li class="password_case">At least 1 uppercase and lowercase letter</li>
+          <li class="password_case">
+            At least 1 uppercase and lowercase letter
+          </li>
           <li class="password_number">At least one number</li>
         </ul>
-         <div class="field">
-            <span class="fas fa-id-card"></span>
-            <input type="text" placeholder="Regst. No." name="rno" id="rno" minlength="15" maxlength="15"required>
-         </div>
-         <div class="field" style="display: none;">
+        <div class="field">
           <span class="fas fa-id-card"></span>
-          <input type='file' id="imageUpload" name="image" accept=".png, .jpg, .jpeg" />
-       </div>
-         <small class="validrno">Enter a valid regst. no.</small>
+          <input
+            type="text"
+            placeholder="Regst. No."
+            name="rno"
+            id="rno"
+            minlength="15"
+            maxlength="15"
+            required
+          />
+        </div>
+        <div class="field" style="display: none">
+          <span class="fas fa-id-card"></span>
+          <input
+            type="file"
+            id="imageUpload"
+            name="image"
+            accept=".png, .jpg, .jpeg"
+          />
+        </div>
+        <small class="validrno">Enter a valid regst. no.</small>
 
-         
-        <input type="submit" class="action" value="Sign up" id="submit-button">
+        <input
+          type="submit"
+          class="action"
+          value="Sign up"
+          id="submit-button"
+        />
 
-         <div class="sign">Already a member?
-            <a href="#" id="login">Login now</a>
-         </div>
-         </form>
-   </div>
-
+        <div class="sign">
+          Already a member?
+          <a href="#" id="login">Login now</a>
+        </div>
+      </form>
+    </div>
 
     <!-- forgot password  -->
-       <div class="forgot box">
-        <div class="text">Forgot Password</div>
-        <form action="/forgot" method="POST" id="form1">
-            <div class="field mb-2">
-                <span class="fas fa-user"></span>
-                <input type="email" placeholder="Email" name="email" required>
-            </div>
-            <div class="field mb-2">
-              <span class="fas fa-user"></span>
-              <input type="text" placeholder="Regst. No." name="rno" required>
-            </div>
-            <div class="field" title="Enter a password longer than 8 characters">
-              <span class="fas fa-lock"></span>
-              <input type="password" class="pwd required" id="pass" name="password" placeholder="New Password" minlength="8" id="password"  required>
-              <i class="fa fa-fw fa-eye field-icon "></i>
-            </div> 
-            <ul class="val-pass mb-1">
-              <li class="password_length">At least 8 characters</li>
-              <li class="password_case">At least 1 uppercase and lowercase letter</li>
-              <li class="password_number">At least one number</li>
-            </ul>
-            <div class="goback text-left">
-                <a href="#" id="login"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go back</a>
-             </div>
-            <input type="submit" class="action" value="Change password" id="submit-button2">
+    <div class="forgot box">
+      <div class="text">Forgot Password</div>
+      <form action="/forgot" method="POST" id="form1">
+        <div class="field mb-2">
+          <span class="fas fa-user"></span>
+          <input type="email" placeholder="Email" name="email" required />
+        </div>
+        <div class="field mb-2">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Regst. No." name="rno" required />
+        </div>
+        <div class="field" title="Enter a password longer than 8 characters">
+          <span class="fas fa-lock"></span>
+          <input
+            type="password"
+            class="pwd required"
+            id="pass"
+            name="password"
+            placeholder="New Password"
+            minlength="8"
+            id="password"
+            required
+          />
+          <i class="fa fa-fw fa-eye field-icon"></i>
+        </div>
+        <ul class="val-pass mb-1">
+          <li class="password_length">At least 8 characters</li>
+          <li class="password_case">
+            At least 1 uppercase and lowercase letter
+          </li>
+          <li class="password_number">At least one number</li>
+        </ul>
+        <div class="goback text-left">
+          <a href="#" id="login"
+            ><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go
+            back</a
+          >
+        </div>
+        <input
+          type="submit"
+          class="action"
+          value="Change password"
+          id="submit-button2"
+        />
+      </form>
+    </div>
 
-        </form>
-      </div>
+    <!-- delete account  -->
+    <div class="delete box">
+      <div class="text">Delete Account</div>
+      <form action="/delete" method="POST">
+        <div class="field mb-2">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Regst. No." name="rno" required />
+        </div>
+        <div class="field">
+          <span class="fas fa-lock"></span>
+          <input
+            type="password"
+            class="pwd"
+            id="pass"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <i class="fa fa-fw fa-eye field-icon"></i>
+        </div>
+        <div class="goback text-left mt-2">
+          <a href="#" id="login"
+            ><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go
+            back</a
+          >
+        </div>
+        <input type="submit" class="action" value="Delete" />
+      </form>
+    </div>
 
-          <!-- delete account  -->
-          <div class="delete box">
-            <div class="text">Delete Account</div>
-            <form action="/delete" method="POST">
-                <div class="field mb-2">
-                    <span class="fas fa-user"></span>
-                    <input type="text" placeholder="Regst. No." name="rno" required>
-                </div>
-                <div class="field">
-                    <span class="fas fa-lock"></span>
-                    <input type="password" class="pwd" id="pass" name="password" placeholder="Password" required>
-                    <i class="fa fa-fw fa-eye field-icon "></i>
-                </div>
-                <div class="goback text-left mt-2 ">
-                    <a href="#" id="login"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go back</a>
-                </div>
-                <input type="submit" class="action" value="Delete" >
-            </form>
-          </div>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>      
-    <script src="./js/script.js"></script> 
-    
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
