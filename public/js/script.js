@@ -9,14 +9,21 @@ function getValues() {
   var storedValues = window.localStorage.myitems;
   // alert(storedValues)
   if (storedValues) {
-    $("body,.box").toggleClass("dark-mode");
-    $(".field input,.setemail").toggleClass("dark-mode-input");
-    $(".action").toggleClass("dark-mode-button");
-    $(".switchBtn").toggleClass("switchBtn2");
-    $(".switchBtn").attr("checked", "checked");
-    // alert("Stored");
+    if (!$("body").hasClass("dark-mode")) {
+      // alert("Stored");
+      $("body,.box").toggleClass("dark-mode");
+      $(".field input,.setemail").toggleClass("dark-mode-input");
+      $(".action").toggleClass("dark-mode-button");
+      $(".switchBtn").toggleClass("switchBtn2");
+      $(".switchBtn").attr("checked", "checked");
+    } else {
+      $("body,.box").removeClass("dark-mode");
+      $(".field input,.setemail").removeClass("dark-mode-input");
+      $(".action").removeClass("dark-mode-button");
+      $(".switchBtn").removeClass("switchBtn2");
+    }
   } else {
-    alert("Not Stored");
+    // $(".switchBtn").attr("checked", "checked");
   }
 }
 $(document).ready(function () {
@@ -29,6 +36,7 @@ $(document).ready(function () {
 
   // dark theme toggler
   $(".switchBtn").click(function () {
+    localStorage.clear();
     $("body,.box").toggleClass("dark-mode");
     $(".field input,.setemail").toggleClass("dark-mode-input");
     $(".action").toggleClass("dark-mode-button");
